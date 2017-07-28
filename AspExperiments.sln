@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{EFF9C83A-4038-4056-81E4-8F72CB9A6385}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspWebExperiments", "AspWebExperiments\AspWebExperiments.csproj", "{0645E11D-5404-45AC-9992-F8ECEB7CF2E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspWebExperiments.Tests", "AspWebExperiments.Tests\AspWebExperiments.Tests.csproj", "{3F94FED1-BBB5-4402-806B-F46B06A9D4E3}"
