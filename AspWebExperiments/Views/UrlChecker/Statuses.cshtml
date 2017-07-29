@@ -1,0 +1,31 @@
+﻿@using AspWebExperiments.Models.UrlChecker
+@model AspWebExperiments.ViewModels.UrlChecker.UrlCheckerStatusViewModel
+
+@{
+    ViewBag.Title = "Web Resource Statuses";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Web Resource Statuses</h2>
+
+<table>
+    <caption>Url Statuses</caption>
+    <tr>
+        <td>Url</td>
+        <td>Status</td>
+        <td>Image</td>
+    </tr>
+    <tr>
+        @foreach (var m in Model.AvailableUrlStatuses)
+        {
+            <td>@m.Path</td>
+            <td>@m.Status</td>
+            <td>
+                @if (m.Status == SuccessStatus.Ok)
+                {
+                    <img src="@m.Path" alt="@m.Path"/>
+                }
+            </td>
+        }
+    </tr>
+</table>
