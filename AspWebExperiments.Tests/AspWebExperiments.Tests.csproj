@@ -56,6 +56,10 @@
     <Compile Include="UrlChecker\UrlCheckerControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AspExperiments.Core\AspExperiments.Core.csproj">
+      <Project>{E397D206-D62A-45B5-9D48-1EBEBBC3FB5B}</Project>
+      <Name>AspExperiments.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AspWebExperiments\AspWebExperiments.csproj">
       <Project>{E74565EA-2DE9-405C-A4FE-FA3D5BB20462}</Project>
       <Name>AspWebExperiments</Name>
