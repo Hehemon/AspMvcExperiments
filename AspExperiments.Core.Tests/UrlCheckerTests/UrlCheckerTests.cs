@@ -22,6 +22,9 @@ namespace AspExperiments.Core.Tests.UrlCheckerTests
         [Theory]
         [InlineData("https://www.google.by/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png", true)]
         [InlineData("https://www.google.by/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png.Error", false)]
+        [InlineData("fake", false)]
+        [InlineData(null, false)]
+
         public void ImageUrlCheckTest(string url, bool expectedResult)
         {
             var checker = IoC.GetInstance<IUrlCheckerService>();
