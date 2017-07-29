@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3F94FED1-BBB5-4402-806B-F46B06A9D4E3}</ProjectGuid>
+    <ProjectGuid>{865CDC18-74DF-4B54-B96A-39DE615FD64A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AspWebExperiments.Tests</RootNamespace>
@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AspWebExperiments\AspWebExperiments.csproj">
-      <Project>{0645E11D-5404-45AC-9992-F8ECEB7CF2E6}</Project>
+      <Project>{E74565EA-2DE9-405C-A4FE-FA3D5BB20462}</Project>
       <Name>AspWebExperiments</Name>
     </ProjectReference>
   </ItemGroup>
