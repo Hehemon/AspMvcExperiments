@@ -36,6 +36,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IoC\BaseIoCTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UrlCheckerTests\Features\UrlCheckerTests.feature.cs">
       <AutoGen>True</AutoGen>

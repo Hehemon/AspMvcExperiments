@@ -3,21 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AspExperiments.Core.Tests.IoC;
 using AspExperiments.Core.UrlChecker;
 using StructureMap;
 using Xunit;
 
 namespace AspExperiments.Core.Tests.UrlCheckerTests
 {
-    public class UrlCheckerTests
+    public class UrlCheckerTests : BaseIoCTests
     {
-        private readonly Container IoC;
-
-        public UrlCheckerTests()
+        protected override Registry CreateContainerRegistry()
         {
-            var registry = new Registry();
+            var registry = base.CreateContainerRegistry();
             registry.For<IUrlCheckerService>().Use<UrlCheckerService>();
-            IoC = new Container(registry);
+            return registry;
         }
 
         [Theory]
