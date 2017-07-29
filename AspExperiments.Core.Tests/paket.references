@@ -1,2 +1,4 @@
-structuremap
 specflow.xunit
+specflow
+xunit
+structuremap

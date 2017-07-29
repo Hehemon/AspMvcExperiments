@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrlChecker\IUrlCheckerService.cs" />
+    <Compile Include="UrlChecker\UrlCheckerService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="paket.references" />
