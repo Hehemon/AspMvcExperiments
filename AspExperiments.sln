@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{4F8762
 		paket.lock = paket.lock
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspExperiments.Core", "AspExperiments.Core\AspExperiments.Core.csproj", "{E397D206-D62A-45B5-9D48-1EBEBBC3FB5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspExperiments.Core.Tests", "AspExperiments.Core.Tests\AspExperiments.Core.Tests.csproj", "{4768D9C2-D2E7-4216-9EDB-1B4404052B2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{865CDC18-74DF-4B54-B96A-39DE615FD64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{865CDC18-74DF-4B54-B96A-39DE615FD64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{865CDC18-74DF-4B54-B96A-39DE615FD64A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E397D206-D62A-45B5-9D48-1EBEBBC3FB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E397D206-D62A-45B5-9D48-1EBEBBC3FB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E397D206-D62A-45B5-9D48-1EBEBBC3FB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E397D206-D62A-45B5-9D48-1EBEBBC3FB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4768D9C2-D2E7-4216-9EDB-1B4404052B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4768D9C2-D2E7-4216-9EDB-1B4404052B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4768D9C2-D2E7-4216-9EDB-1B4404052B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4768D9C2-D2E7-4216-9EDB-1B4404052B2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
