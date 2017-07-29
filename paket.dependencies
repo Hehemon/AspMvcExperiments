@@ -1,4 +1,5 @@
 source https://www.nuget.org/api/v2/
+content none
 
 nuget Microsoft.AspNet.Mvc 5.2.3 restriction: >= net462
 nuget Microsoft.AspNet.Razor 3.2.3 restriction: >= net462
@@ -6,3 +7,5 @@ nuget Microsoft.AspNet.WebPages 3.2.3 restriction: >= net462
 nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform 1.0.3 restriction: >= net462
 nuget Microsoft.Net.Compilers 1.3.2 restriction: >= net462
 nuget Microsoft.Web.Infrastructure 1.0.0.0 restriction: >= net462
+nuget specflow.xunit
+nuget structuremap
