@@ -10,4 +10,5 @@ nuget Microsoft.Web.Infrastructure 1.0.0.0 restriction: >= net462
 nuget specflow
 nuget specflow.xunit
 nuget structuremap
+nuget StructureMap.MVC5
 nuget xunit

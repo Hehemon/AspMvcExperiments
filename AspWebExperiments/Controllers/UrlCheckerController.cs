@@ -13,5 +13,10 @@ namespace AspWebExperiments.Controllers
         {
             return View();
         }
+
+        public ActionResult Status(string url)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
