@@ -15,17 +15,17 @@
         <td>Status</td>
         <td>Image</td>
     </tr>
-    <tr>
-        @foreach (var m in Model.AvailableUrlStatuses)
-        {
+    @foreach (var m in Model.AvailableUrlStatuses)
+    {
+        <tr>
             <td>@m.Path</td>
             <td>@m.Status</td>
             <td>
                 @if (m.Status == SuccessStatus.Ok)
                 {
-                    <img src="@m.Path" alt="@m.Path"/>
+                    <img src="@m.Path" alt="@m.Path" />
                 }
             </td>
-        }
-    </tr>
+        </tr>
+    }
 </table>
