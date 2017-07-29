@@ -7,13 +7,12 @@ namespace AspExperiments.Core.UrlChecker
     {
         public bool IsUrlAvailable(string url, int timeout = 1000)
         {
-            var request = WebRequest.Create(url);
-            request.Method = "HEAD";
-            request.Timeout = timeout;
-
             WebResponse response = null;
             try
             {
+                var request = WebRequest.Create(url);
+                request.Method = "HEAD";
+                request.Timeout = timeout;
                 response = request.GetResponse();
                 return true;
             }
