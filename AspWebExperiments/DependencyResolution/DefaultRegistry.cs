@@ -1,4 +1,5 @@
 ﻿using AspExperiments.Core.UrlChecker;
+using AspWebExperiments.ModelBuilders.UrlChecker;
 using StructureMap;
 
 namespace AspWebExperiments.DependencyResolution
@@ -20,8 +21,8 @@ namespace AspWebExperiments.DependencyResolution
                     scan.With(new ControllerConvention());
                 });
 
-            //For<IExample>().Use<Example>();
             For<IUrlCheckerService>().Use<UrlCheckerService>();
+            For<IUrlCheckerResultModelBuilder>().Use<UrlCheckerResultModelBuilder>();
         }
 
         #endregion

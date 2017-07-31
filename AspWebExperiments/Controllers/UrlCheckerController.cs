@@ -11,11 +11,11 @@ namespace AspWebExperiments.Controllers
 {
     public class UrlCheckerController : Controller
     {
-        private readonly IUrlCheckerService _checkerService;
+        private readonly IUrlCheckerResultModelBuilder _urllCheckerResultModelBuilder;
 
-        public UrlCheckerController(IUrlCheckerService checkerService)
+        public UrlCheckerController(IUrlCheckerResultModelBuilder urllCheckerResultModelBuilder)
         {
-            _checkerService = checkerService;
+            _urllCheckerResultModelBuilder = urllCheckerResultModelBuilder;
         }
 
         // GET: UrlChecker
@@ -26,8 +26,7 @@ namespace AspWebExperiments.Controllers
 
         public ActionResult Statuses(string[] urls)
         {
-            var modelBuilder = new UrlCheckerResultModelBuilder(_checkerService);
-            var model = modelBuilder.GetViewModel(urls);
+            var model = _urllCheckerResultModelBuilder.GetViewModel(urls);
             return View("Statuses", model);
         }
 
